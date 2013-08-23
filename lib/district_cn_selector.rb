@@ -1,3 +1,4 @@
+require "district_cn"
 require "district_cn_selector/engine"
 
 module DistrictCnSelector

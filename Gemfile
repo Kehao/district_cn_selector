@@ -28,7 +28,6 @@ gem 'font-awesome-rails'
 
 gem 'select2-rails'
 gem 'simple_form'
-gem 'district_cn'
 
 #gem 'snap_js-rails'
 
