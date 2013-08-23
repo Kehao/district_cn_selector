@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield :title %> Area Select CN</title>
+    <%= stylesheet_link_tag "application", :media => "all" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div id="content" class="container">
+      <%= yield %>
+    </div>
+    <%= javascript_include_tag "application" %>
+    <%= yield :js %>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+/** 地区选择 **/
+.area_select_cn,  
+.area_select_cn .control-label, 
+.area_select_cn ul{
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  /*font: inherit;*/
+  vertical-align: baseline;
+}
+.area_select_cn ul{ list-style: none; }
+.area_select_cn .control-label{
+  float:left;
+}
+.area_select_cn .controls{
+  display:inline-block;
+} 
+.area_select_cn .controls:after
+{
+  content:".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;
+}
+.area_select_cn .controls {display:block;}
+
+.area_select_cn .select-input{
+  position: relative;
+  margin-left:17px;
+  float:left;
+}
+.area_select_cn .province{
+  margin-left:0;
+}
+
+.area_select_cn .select-input .select-prompt {
+  cursor: pointer;
+  color:#000033;
+  width:119px;
+  height:28px;
+}
+
+.area_select_cn .select-input .select-content{
+  letter-spacing: 2px;
+  background:url("../district_cn_selector/area-bg1.jpg");
+  white-space: nowrap;
+  overflow:hidden;
+  text-align:center;
+  float:left;
+  font-size:14px;
+  line-height:28px;
+  width:94px;
+}
+.area_select_cn .select-input .select-tangle{
+  display:block;
+  width:25px;
+  height:28px;
+  float:right;
+  background:url("../district_cn_selector/area-bg2.jpg");
+}
+
+.area_select_cn .select-input .select-opts{
+  display:none;
+  background-color:#FFFFFF;
+  position: absolute;
+  border: 1px solid #D6D6D6;
+  border-top: none;
+  box-shadow: 0 1px 3px #ECECEC;
+  z-index: 100;
+  top:28px;;
+  left:1px;
+  width:116px;
+  max-height: 350px;
+  overflow:auto;
+  margin: 0;
+}
+.area_select_cn .select-input .select-opts a{
+  text-decoration: none; 
+  display:block;
+  padding-left:6px; 
+  font-size: 14px;
+  line-height:24px;
+  width:110px;
+  cursor: pointer;
+  color: #000033
+}
+.area_select_cn  .select-input li:hover { background-color: #D6D6D6; }
+.area_select_cn  .select-input li.active  { background-color: #D6D6D6; }
+.area_select_cn select{
+  width:130px;
+  margin-right:10px
+}

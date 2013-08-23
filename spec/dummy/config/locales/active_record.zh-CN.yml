@@ -1,0 +1,11 @@
+#encoding: utf-8
+zh-CN:
+  activerecord:
+    errors:
+      messages:
+        blank: "不能为空！"
+    models:
+      company: "公司"
+    attributes:
+      company:
+        region_code: "地区"

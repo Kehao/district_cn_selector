@@ -1,0 +1,49 @@
+<div class="span4">
+  <input type="hidden" id="e1" tabindex="-1" value="331002"/>
+
+  <%= content_for :js do %>
+    <script>
+      $(document).ready(function () {
+        function format(item) { return item.text; }
+
+        $("#e1").select2({
+          minimumInputLength: 1,
+          placeholder: "请选择地区",
+          width: "100%",
+          matcher: function (term, text, opt) {
+            return text.toUpperCase().indexOf(term.toUpperCase()) >= 0
+                    || opt.attr("alt").toUpperCase().indexOf(term.toUpperCase()) >= 0;
+          },
+          ajax: { // instead of writing the function to execute the request we use Select2's convenient helper
+            url: "/area_select_cn/district/search",
+            dataType: 'json',
+            data: function (term, page) {
+              return {
+                region_name: term // search term
+                //page_limit: 10,
+                //apikey: "ju6z9mjyajq2djue3gbvv26t" // please do not use so this example keeps working
+              };
+            },
+            results: function (data, page) { // parse the results into the format expected by Select2.
+              // since we are using custom formatting functions we do not need to alter remote JSON data
+              return {results: data};
+            }
+          },
+          initSelection: function (element, callback) {
+            var region_code = $(element).attr('value');
+            if (region_code !== "") {
+              $.ajax("/area_select_cn/district?region_code=" + region_code, {
+                data: {},
+                dataType: "json"
+              }).done(function (data) {
+                        callback(data);
+                      });
+            }
+          },
+          //formatResult: format, // omitted for brevity, see the source of this page
+          formatSelection: format  // omitted for brevity, see the source of this page
+        });
+      });
+    </script>
+  <% end %>
+</div>

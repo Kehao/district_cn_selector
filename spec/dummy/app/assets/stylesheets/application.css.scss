@@ -1,0 +1,32 @@
+/*
+ *= require_self
+ *= require district_cn_selector/district-ul
+ *= require select2
+ */
+
+@import "bootstrap";
+@import "font-awesome";
+
+$baseLineHeight: 20px;
+
+body {
+  padding-top: 45px;
+}
+
+strong {
+  font-weight: bold;
+  line-height: $baseLineHeight - 1;
+}
+
+.field_with_errors{
+  .controls{ border: 1px solid red; }
+  color: red;
+}
+.province_select,
+.city_select,
+.district_select{
+  select{width:130px;margin-right:10px}
+}
+
+
+

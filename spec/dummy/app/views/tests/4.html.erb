@@ -1,0 +1,7 @@
+<%= simple_form_for @company, :url => '#', :html => {:class => 'form-horizontal'} do |f| %>
+  <legend>simple_form_for</legend>
+  <%= f.input :loc_code, :as => :district_select_ul, :prompt_class => "btn btn-success" %>
+  <div class="form-actions">
+    <%= f.submit "提交", :class => "btn btn-success" %>
+  </div>
+<% end %>
