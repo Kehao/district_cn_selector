@@ -23,5 +23,5 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "rails", ">= 3.2.13"
   spec.add_dependency "jquery-rails"
-  spec.add_dependency "district-cn"
+  spec.add_dependency "district_cn"
 end
