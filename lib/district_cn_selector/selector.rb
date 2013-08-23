@@ -40,11 +40,11 @@ module DistrictCnSelector
       end
 
       def build_select(type)
-        #rewrite
+        #overwrite
       end
 
       def build_one(type)
-        #rewrite
+        #overwrite
       end
 
       def select_district

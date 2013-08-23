@@ -46,6 +46,7 @@ if you want to use the default theme, add it to your application.css:
 <%= form_tag "" do %>
 <!-- select -->
   <%= district_select(:company,:region_code,"331000") %>
+
 <!-- select-ul -->
   <%= district_select_ul(:company,:region_code,"331000") %>
 <% end %>
@@ -56,6 +57,7 @@ if you want to use the default theme, add it to your application.css:
 <%= form_for Company.new,:builder => DistrictCnSelector::Helpers::FormBuilder do |f| %>
 <!-- select -->
   <%= f.district_select :region_code%>
+
 <!-- select-ul -->
   <%= f.district_select_ul :region_code%>
 <%end%>
@@ -66,6 +68,7 @@ if you want to use the default theme, add it to your application.css:
 <%= simple_form_for Company.new,:html => { :class => 'form-horizontal' } do |f| %>
 <!-- select -->
   <%= f.input :region_code,:as => :district_select %>
+
 <!-- select-ul -->
   <%= f.input :region_code,:as => :district_select_ul %>
 <% end %>
