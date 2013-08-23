@@ -1,9 +1,9 @@
 [![Gem Version](https://badge.fury.io/rb/area_cn.png)](http://badge.fury.io/rb/area_cn)
 ## 地区选择插件(测试中) 
-  整理多种地区选择器:
+  三级联动地区选择器:
 
   1. select-ul 模拟下拉菜单
-  2. select(done,testing)
+  2. select 下拉菜单(done,testing)
 
 ## Example
   [Online Demo](http://112.124.38.145:9292).
