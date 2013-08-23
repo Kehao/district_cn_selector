@@ -29,8 +29,6 @@ gem 'font-awesome-rails'
 gem 'select2-rails'
 gem 'simple_form'
 
-gem 'district_cn',:git => 'git@github.com:Kehao/district_cn.git'
-
 #gem 'snap_js-rails'
 
 # Declare any dependencies that are still in development here instead of in
