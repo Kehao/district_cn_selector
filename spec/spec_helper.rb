@@ -30,14 +30,14 @@ end
 require File.expand_path("../dummy/config/environment.rb", __FILE__)
 require 'rspec/rails'
 require 'rspec/autorun'
-require 'capybara/rails'
+#require 'capybara/rails'
 require 'factory_girl_rails'
 
 
 Rails.backtrace_cleaner.remove_silencers!
-Capybara.javascript_driver = :webkit
-
+#Capybara.javascript_driver = :webkit
 # Load support files
+#
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each { |f| require f }
 
 RSpec.configure do |config|
