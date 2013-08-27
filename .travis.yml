@@ -5,7 +5,6 @@ before_install:
 
 gemfile:
   - Gemfile
-  - Gemfile.rails4
 
 rvm:
   - 1.9.3
