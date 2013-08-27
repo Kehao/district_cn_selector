@@ -1,4 +1,4 @@
-[![Gem Version](https://badge.fury.io/rb/area_cn.png)](http://badge.fury.io/rb/area_cn)
+[![Gem Version](https://badge.fury.io/rb/district_cn_selector.png)](http://badge.fury.io/rb/district_cn_selector)
 ## 地区选择插件(测试中) 
   三级联动地区选择器:
 
@@ -112,6 +112,10 @@ if you want to use bootstrap theme, you should import bootstrap css.
 
 <!-- simple_form_for,如果SimpleForm.wrapper等于:bootstrap，默认样式为:bootstrap -->
 <%= f.input :region_code,:as => :district_select_ul %>
+```
+## Test
+``` ruby
+  rake spec
 ```
 ## Resources
 * Chosen(http://harvesthq.github.io/chosen/)
