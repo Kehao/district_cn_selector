@@ -22,13 +22,13 @@ module DistrictCnSelector
       end
 
       def secure_random
-        @secure_random ||= "area-select-#{SecureRandom.hex}"
+        @secure_random ||= "selector_#{SecureRandom.hex}"
       end
 
       def control_group(type)
         controls = instance_tag.content_tag(:div, build_select(type), :class => "controls")
         label = instance_tag.to_label_tag(nil, :class => "control-label")
-        content_tag(:div, [label, controls].join.html_safe, :class => "control-group area_select_cn")
+        content_tag(:div, [label, controls].join.html_safe, :class => "control-group district_cn_selector")
       end
 
       def build_hidden 
@@ -77,7 +77,7 @@ module DistrictCnSelector
       end
 
       def theme_options(opts)
-        theme = DistrictCnSelector::Theme.area_select_ul
+        theme = DistrictCnSelector::Theme.district_select_ul
         theme_options = theme[opts[:theme]]
         theme_options ||= theme[:default]
 

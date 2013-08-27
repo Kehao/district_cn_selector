@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = DistrictCnSelector::VERSION
   spec.authors       = ["kehao"]
   spec.email         = ["kehao.qiu@gmail.com"]
-  spec.description   = %q{地区选择器}
-  spec.summary       = %q{地区选择器}
+  spec.description   = %q{三级联动地区选择器}
+  spec.summary       = %q{三级联动地区选择器}
   #spec.homepage      = ""
   spec.license       = "MIT"
 

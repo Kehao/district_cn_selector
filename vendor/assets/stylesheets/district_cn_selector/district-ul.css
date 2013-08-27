@@ -1,21 +1,21 @@
 /** 地区选择 **/
-.area_select_cn,  
-.area_select_cn .control-label, 
-.area_select_cn ul{
+.district_cn_selector,  
+.district_cn_selector .control-label, 
+.district_cn_selector ul{
   padding: 0;
   border: 0;
   font-size: 100%;
   /*font: inherit;*/
   vertical-align: baseline;
 }
-.area_select_cn ul{ list-style: none; }
-.area_select_cn .control-label{
+.district_cn_selector ul{ list-style: none; }
+.district_cn_selector .control-label{
   float:left;
 }
-.area_select_cn .controls{
+.district_cn_selector .controls{
   display:inline-block;
 } 
-.area_select_cn .controls:after
+.district_cn_selector .controls:after
 {
   content:".";
   display:block;
@@ -23,25 +23,25 @@
   clear:both;
   visibility:hidden;
 }
-.area_select_cn .controls {display:block;}
+.district_cn_selector .controls {display:block;}
 
-.area_select_cn .select-input{
+.district_cn_selector .select-input{
   position: relative;
   margin-left:17px;
   float:left;
 }
-.area_select_cn .province{
+.district_cn_selector .province{
   margin-left:0;
 }
 
-.area_select_cn .select-input .select-prompt {
+.district_cn_selector .select-input .select-prompt {
   cursor: pointer;
   color:#000033;
   width:119px;
   height:28px;
 }
 
-.area_select_cn .select-input .select-content{
+.district_cn_selector .select-input .select-content{
   letter-spacing: 2px;
   background:url("../district_cn_selector/area-bg1.jpg");
   white-space: nowrap;
@@ -52,7 +52,7 @@
   line-height:28px;
   width:94px;
 }
-.area_select_cn .select-input .select-tangle{
+.district_cn_selector .select-input .select-tangle{
   display:block;
   width:25px;
   height:28px;
@@ -60,7 +60,7 @@
   background:url("../district_cn_selector/area-bg2.jpg");
 }
 
-.area_select_cn .select-input .select-opts{
+.district_cn_selector .select-input .select-opts{
   display:none;
   background-color:#FFFFFF;
   position: absolute;
@@ -75,7 +75,7 @@
   overflow:auto;
   margin: 0;
 }
-.area_select_cn .select-input .select-opts a{
+.district_cn_selector .select-input .select-opts a{
   text-decoration: none; 
   display:block;
   padding-left:6px; 
@@ -85,9 +85,9 @@
   cursor: pointer;
   color: #000033
 }
-.area_select_cn  .select-input li:hover { background-color: #D6D6D6; }
-.area_select_cn  .select-input li.active  { background-color: #D6D6D6; }
-.area_select_cn select{
+.district_cn_selector  .select-input li:hover { background-color: #D6D6D6; }
+.district_cn_selector  .select-input li.active  { background-color: #D6D6D6; }
+.district_cn_selector select{
   width:130px;
   margin-right:10px
 }

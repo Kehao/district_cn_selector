@@ -1,6 +1,6 @@
 module DistrictCnSelector
   module Theme 
-    def self.area_select_ul
+    def self.district_select_ul
       {
         :default => {
         :select         => {:class=>"select-input"},

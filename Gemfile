@@ -8,8 +8,6 @@ gemspec
 # jquery-rails is used by the dummy application
 gem "sqlite3"
 group :development, :test do
-  gem "spork"
-  gem "spork-rails"
   gem "rspec-rails"
   gem "capybara"
   gem "capybara-webkit"
@@ -21,14 +19,13 @@ gem 'uglifier', '>= 1.0.3'
 
 gem 'jquery-rails'
 gem 'sass-rails',   '~> 3.2.3'
-gem 'coffee-rails', '~> 3.2.1'
 gem 'less-rails'
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
-
-gem 'select2-rails'
 gem 'simple_form'
 
+
+#gem 'select2-rails'
 #gem 'snap_js-rails'
 
 # Declare any dependencies that are still in development here instead of in
