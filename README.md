@@ -17,7 +17,7 @@
 ##Installation
 Add it to your Gemfile:
 ```ruby
-gem 'district_cn_selector',:git=>"git@github.com:Kehao/district_cn_selector.git"
+gem 'district_cn_selector'
 ```
 
 And then execute:
