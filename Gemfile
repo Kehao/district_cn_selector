@@ -9,8 +9,8 @@ gemspec
 gem "sqlite3"
 group :development, :test do
   gem "rspec-rails"
-  gem "capybara"
-  gem "capybara-webkit"
+#  gem "capybara"
+#  gem "capybara-webkit"
   gem "factory_girl_rails"
 end
 
