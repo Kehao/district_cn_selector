@@ -1,4 +1,5 @@
 [![Gem Version](https://badge.fury.io/rb/district_cn_selector.png)](http://badge.fury.io/rb/district_cn_selector)
+[![Build Status](https://travis-ci.org/Kehao/district_cn_selector.png?branch=master)](https://travis-ci.org/Kehao/district_cn_selector)
 ## 地区选择插件 
   三级联动地区选择器:
 
