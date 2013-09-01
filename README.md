@@ -14,8 +14,9 @@
   2. 支持simple_form
   3. 支持select和select-ul
   4. 基于[district_cn](https://github.com/Kehao/district_cn),有一些实用的方法
+
 ##TODO
-  兼容rails4 
+  *兼容rails4 *
 
 ##Installation
 Add it to your Gemfile:
