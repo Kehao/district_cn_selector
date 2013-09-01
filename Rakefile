@@ -22,7 +22,7 @@ task :build do
 end
 
 task :install => :build do
-  system "sudo gem install district_cn_selector-#{version}.gem"
+  system "gem install district_cn_selector-#{version}.gem"
 end
 
 task :release => :build do
@@ -32,7 +32,6 @@ task :release => :build do
   system "git push --tags"
   puts "Pushing to rubygems.org..."
   system "gem push district_cn_selector-#{version}.gem"
-  system "mv district_cn_selector-#{version}.gem pkg/"
 end
 
 require 'rspec/core'
