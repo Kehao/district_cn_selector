@@ -12,6 +12,29 @@ Bundler::GemHelper.install_tasks
 
 Dir[File.join(File.dirname(__FILE__), 'tasks/**/*.rake')].each {|f| load f }
 
+require "district_cn_selector/version"
+version = DistrictCnSelector::VERSION
+
+
+task :build do
+  system "mkdir -p pkg"
+  system "gem build district_cn_selector.gemspec"
+end
+
+task :install => :build do
+  system "sudo gem install district_cn_selector-#{version}.gem"
+end
+
+task :release => :build do
+  puts "Tagging #{version}..."
+  system "git tag -a #{version} -m 'Tagging #{version}'"
+  puts "Pushing to Github..."
+  system "git push --tags"
+  puts "Pushing to rubygems.org..."
+  system "gem push district_cn_selector-#{version}.gem"
+  system "mv district_cn_selector-#{version}.gem pkg/"
+end
+
 require 'rspec/core'
 require 'rspec/core/rake_task'
 
