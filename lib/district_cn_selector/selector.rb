@@ -27,12 +27,20 @@ module DistrictCnSelector
 
       def control_group(type)
         controls = instance_tag.content_tag(:div, build_select(type), :class => "controls")
-        label = instance_tag.to_label_tag(nil, :class => "control-label")
-        content_tag(:div, [label, controls].join.html_safe, :class => "control-group district_cn_selector")
+        content_tag(:div, [build_label, controls].join.html_safe, :class => "control-group district_cn_selector")
+      end
+
+      def build_label
+        instance_tag.to_label_tag(nil, :class => "control-label")
       end
 
       def build_hidden 
-        instance_tag.to_input_field_tag("hidden", :class => "select-value", :value => objectify_code.value)
+        tag("input", 
+            :disabled => html_options["disabled"], 
+            :name => html_options["name"], 
+            :class => "select-value",
+            :type => "hidden", 
+            :value => objectify_code.value) 
       end
 
       def to_select(type)

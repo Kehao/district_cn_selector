@@ -14,6 +14,7 @@ end
 #  g.assets false
 #  g.helper false
 #end
+
 #initializer "area_select_cn.view_helpers" do
 #  ::ActiveSupport.on_load(:action_view) do
 #    ::ActionView::Base.send :include, AreaSelectCn::Helper

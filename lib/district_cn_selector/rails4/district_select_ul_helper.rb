@@ -1,23 +1,15 @@
 module ActionView
   module Helpers
-    module DistrictSelectUlHelper
+    #module DistrictSelectUlHelper
+    module FormOptionsHelper
       def district_select_ul(object_name, method, options={}, html_options={})
         Tags::DistrictSelectUl.new(object_name, method, self, options, html_options).render
       end
 
-      def select_ul_district(region_code=nil,options= {},html_options = {})
-        DistrictSelectUlSelector.new(region_code, options, html_options).select_date
-      end
+      #def select_ul_district(region_code=nil,options= {},html_options = {})
+      #  DistrictSelectUlSelector.new(region_code, options, html_options).select_date
+      #end
 
-      class DistrictSelectUlSelector #:nodoc:
-        include ActionView::Helpers::TagHelper
-
-        def initialize(region_code, options = {}, html_options = {})
-          @options      = options.dup
-          @html_options = html_options.dup
-          @region_code  = region_code
-        end
-      end
     end
 
     module Tags
@@ -28,12 +20,12 @@ module ActionView
         end
 
         def render
-          error_wrapping(district_select_ul_selector(@options, @html_options).send("select_#{select_type}").html_safe)
+          error_wrapping(district_select_ul_selector(@options, @html_options).send("to_select",:district).html_safe)
         end
         private
 
         def district_select_ul_selector(options, html_options)
-          DistrictSelectUlSelector.new(region_code, options, html_options)
+          DistrictCnSelector::SelectUlSelector.new(value(object), options, html_options)
         end
 
       end

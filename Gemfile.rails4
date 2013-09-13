@@ -1,0 +1,18 @@
+source 'http://ruby.taobao.org/'
+gemspec
+
+gem 'rails', '4.0.0', :require => false
+gem 'sqlite3', :platform => [:ruby, :mswin, :mingw]
+gem 'uglifier', '>= 1.0.3'
+gem 'therubyracer', :platforms => :ruby
+gem 'jquery-rails'
+gem 'sass-rails', '~> 4.0.0'
+gem 'bootstrap-sass'
+gem 'font-awesome-rails'
+gem 'simple_form', "3.0.0.rc"
+
+group :development, :test do
+  gem "rspec-rails"
+  gem "factory_girl_rails"
+end
+
