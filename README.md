@@ -6,9 +6,6 @@
   1. select-ul 模拟下拉菜单
   2. select 下拉菜单
 
-## Example
-  [Online Demo](http://112.124.38.145:9292).
-
 ##Features
   1. 支持bootstrap  
   2. 支持simple_form
